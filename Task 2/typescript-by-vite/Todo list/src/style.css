@@ -1,0 +1,36 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1d7715, rgb(233, 218, 3));
+  padding: 10px;
+}
+#new_task_form{
+  width: 100%;
+  max-width: 570px;
+  background: linear-gradient(135deg, #13972f, rgb(221, 206, 2));
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  
+}
+#new_task_form h1{
+  color: linear-gradient(135deg, #119c3f, rgb(201, 188, 3));
+ 
+}
+#list{
+  list-style: none;
+  padding: 0;
+
+}
+.delete-btn {
+  margin-left: 10px; /* Add spacing between the button and text */
+}
