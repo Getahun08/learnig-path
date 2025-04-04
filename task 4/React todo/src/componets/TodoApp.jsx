@@ -27,6 +27,11 @@ const TodoApp = () => {
 
 
     }
+    const edittodo=(id,editedtodo)=>{
+        settodolist((prevttdo)=>{
+            return prevttdo.map((todo)=>todo.id ===id? {...todo,...editedtodo}:todo)
+        })
+    }
     const checked=(id)=>{
         settodolist((prtd)=>{
             return prtd.map((todo)=>{
@@ -63,7 +68,8 @@ const TodoApp = () => {
       </div>
         <div>
             {todolist.map((item,index)=>{
-                return<TodoItems key={index}text={item.text} id={item.id} isComplete={item.isComplete} deletetodo={deletetodo} checked={checked}/>
+                return<TodoItems key={index}text={item.text} id={item.id} isComplete={item.isComplete} deletetodo={deletetodo}
+                 checked={checked} edittodo={edittodo}/>
             })}
           
         </div>
